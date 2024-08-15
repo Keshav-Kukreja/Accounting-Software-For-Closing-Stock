@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h1>{{name}}</h1>
+        <select
+          name=""
+          id=""
+          style="
+            width: 400px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 8px;
+          "
+        >
+          <option value="">2021-22</option>
+          <option value="">2022-23</option>
+          <option value="">2023-24</option>
+          <option value="">New F.Y.</option>
+        </select>
+      </div>
+      <table style="height: 300px">
+        <tbody>
+          <th>Discription</th>
+          <th>Opening Stock</th>
+          <th>Purchase</th>
+          <th>Gross Profit</th>
+          <th>Sale</th>
+          <th>Closing Stock</th>
+          <tr>
+            <td>5</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="options">
+        <button>Back</button>
+        <button>Clear</button>
+        <button>Save</button>
+        <button>Export</button>
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      /* justify-content: center; */
+      padding: 50px;
+      align-items: center;
+      background-color: #4793af;
+    }
+    .top {
+      background: #ffc470;
+      width: 1150px;
+      height: 100px;
+      /* border-radius: 8px; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+    }
+    table {
+        background-color: white;
+    }
+    tr,
+    th {
+      background: #e8efcf;
+      width: 50px;
+      padding: 5px;
+    }
+    td {
+      padding: 5px;
+    }
+    td input {
+      height: 35px;
+      width: 200px;
+      border: 1px #4793af solid;
+      border-radius: 15px;
+      padding: 5px;
+    }
+    .options {
+      background: #FFC470;
+      width: 1150px;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border-radius: 8px; */
+      gap: 10px;
+    }
+    .options button {
+      flex-basis: 20%;
+      height: 40px;
+      border: 1px #ffc470 solid;
+      border-radius: 15px;
+      background: #e8efcf;
+    }
+  </style>
+  <script>
+    let cols = document.querySelectorAll("td");
+    cols.forEach((col, index) => {
+      console.log(index);
+      if (index == 0 || index % 2 == 0) {
+        col.style.background = "#DEAC80";
+      }
+    });
+  </script>
+</html>
