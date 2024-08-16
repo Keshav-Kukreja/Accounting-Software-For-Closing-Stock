@@ -6,11 +6,31 @@ I have used Python Flask to create a backend server, which serves the data from 
 
 for the frontend I have used Vue JS.
 
+How to test:
+
+Change current directory to repo that you cloned.
+
+<code>cd Accounting-Software-For-Closing-Stock</code>
+
+Now install node pakages using:
+<code>npm install</code>
+
+Before running vue app install flask server dependencies 
+
+<code>cd server</code>
+<code>pip install -r Requirements.txt</code>
+<code>python main.py</code>
+
+After starting flask server come back to the parent directory
+<code>cd ..</code>
+
+And start vue app:
+<code>npm run dev</code>
+
 
 Key notes :
 
-- Their isn't any delete option to remove companies (will be added soon).
-- Modify page dosen't follow the theme of the application.
-- Thier are function which aren't tested so, their might be bugs in code
+- There isn't any delete option to remove companies (will be added soon).
+- Modify page dosen't follow application theme.
 - Code migh be buggy so test it in development environment. 
 
