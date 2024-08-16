@@ -13,18 +13,21 @@ Change current directory to repo that you cloned.
 <code>cd Accounting-Software-For-Closing-Stock</code>
 
 Now install node pakages using:
+
 <code>npm install</code>
 
 Before running vue app install flask server dependencies 
 
 <code>cd server</code>
-<code>pip install -r Requirements.txt</code>
-<code>python main.py</code>
+pip install -r Requirements.txt
+python main.py</code>
 
 After starting flask server come back to the parent directory
+
 <code>cd ..</code>
 
 And start vue app:
+
 <code>npm run dev</code>
 
 
