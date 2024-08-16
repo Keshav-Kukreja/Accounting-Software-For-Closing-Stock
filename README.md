@@ -18,8 +18,8 @@ Now install node pakages using:
 
 Before running vue app install flask server dependencies 
 
-<code>cd server</code>
-pip install -r Requirements.txt
+<code>cd server <br>
+pip install -r Requirements.txt <br>
 python main.py</code>
 
 After starting flask server come back to the parent directory
