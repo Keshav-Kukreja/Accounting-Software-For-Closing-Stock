@@ -37,7 +37,7 @@ cd ..
 And start vue app:
 
 ```
-npm run dev</code>
+npm run dev
 ```
 
 
